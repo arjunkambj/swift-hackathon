@@ -237,7 +237,7 @@ const DashboardPage: FC = () => {
                   </CardHeader>
                   <CardContent className="p-2 pt-0">
                     <p className="text-sm text-muted-foreground">
-                      No one will be able to freeze holders' token accounts
+                      No one will be able to freeze holders token accounts
                       anymore
                     </p>
                   </CardContent>

@@ -2,13 +2,7 @@
 
 import { FC } from "react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 
@@ -21,7 +15,6 @@ import { useState } from "react";
 import { toast } from "sonner";
 
 const AirdropPage: FC = () => {
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [distributionMethod, setDistributionMethod] = useState<
     "same" | "different"
   >("same");
@@ -33,7 +26,6 @@ const AirdropPage: FC = () => {
       toast.error("Please upload a CSV file");
       return;
     }
-    setSelectedFile(file);
   };
 
   return (
