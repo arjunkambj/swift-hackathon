@@ -60,7 +60,7 @@ const AppSidebar: FC<AppSidebarProps> = ({ className }) => {
     >
       <Sidebar>
         <SidebarHeader className="p-4">
-          <h1 className="text-2xl font-bold tracking-tight">Swift Protocol</h1>
+          <h1 className="text-2xl font-bold tracking-tight">Caffeinator</h1>
         </SidebarHeader>
         <SidebarContent className="px-3">
           <SidebarGroup>

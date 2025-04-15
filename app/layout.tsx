@@ -13,7 +13,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Swift Protocol - Create & airdrop compressed Tokens",
+  title: "Caffeinator - Create & airdrop compressed Tokens",
   description: "Create & airdrop compressed Tokens on Solana",
 };
 
