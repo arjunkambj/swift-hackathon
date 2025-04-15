@@ -28,7 +28,7 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
         <SidebarProvider>
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="light"
             enableSystem
             disableTransitionOnChange
           >
