@@ -6,7 +6,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 
-import { Upload, FileText, Download } from "lucide-react";
+import { Upload, FileText } from "lucide-react";
 
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
@@ -43,8 +43,8 @@ const AirdropPage: FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="space-y-2">
               <label className="text-base font-medium flex items-center">
-                <span className="text-destructive mr-1">*</span> Token to
-                Airdrop:
+                Token to Airdrop:{" "}
+                <span className="text-destructive ml-1 text-xs">*</span>
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -75,8 +75,8 @@ const AirdropPage: FC = () => {
 
             <div className="space-y-2">
               <label className="text-base font-medium flex items-center">
-                <span className="text-destructive mr-1">*</span> Amount per
-                Wallet:
+                Amount per Wallet:
+                <span className="text-destructive ml-1 text-xs">*</span>
               </label>
               <div className="flex gap-2">
                 <Button
@@ -100,8 +100,8 @@ const AirdropPage: FC = () => {
 
             <div className="space-y-2">
               <label className="text-base font-medium flex items-center">
-                <span className="text-destructive mr-1">*</span> Quantity per
-                Wallet:
+                Quantity per Wallet:
+                <span className="text-destructive ml-1 text-xs">*</span>
               </label>
               <Input
                 type="number"
@@ -113,10 +113,10 @@ const AirdropPage: FC = () => {
 
           <div className="space-y-4">
             <div className="space-y-2">
-              <label className="text-base font-medium">
+              <label className="text-base font-medium ">
                 Method to load Addresses:
               </label>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 mt-3 gap-4">
                 <Card className="border-primary">
                   <CardContent className="p-4 flex flex-col items-center">
                     <FileText className="h-7 w-7 mb-2 text-primary" />
@@ -140,7 +140,7 @@ const AirdropPage: FC = () => {
           <div className="space-y-2">
             <div className="flex justify-between items-center">
               <label className="text-base font-medium flex items-center">
-                <span className="text-destructive mr-1">*</span> Address
+                Address <span className="text-destructive ml-1 text-xs">*</span>
               </label>
               <div className="text-sm text-muted-foreground">
                 <span>0 Wallets</span>
@@ -173,20 +173,14 @@ const AirdropPage: FC = () => {
                 onChange={handleFileChange}
               />
             </Button>
-            <Button
-              variant="outline"
-              className="flex items-center gap-2 h-12 text-base"
-            >
-              <Download className="h-5 w-5" />
-              Download Example
-            </Button>
           </div>
 
           <Separator />
 
           <div className="space-y-2">
             <label className="text-base font-medium flex items-center">
-              <span className="text-destructive mr-1">*</span> Send Time:
+              Send Time:
+              <span className="text-destructive ml-1 text-xs">*</span>
             </label>
             <RadioGroup defaultValue="now" className="flex gap-4">
               <div className="flex items-center space-x-2">

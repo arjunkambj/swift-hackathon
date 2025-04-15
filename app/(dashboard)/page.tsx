@@ -22,8 +22,7 @@ const DashboardPage: FC = () => {
       <div className="text-center space-y-3">
         <h1 className="text-5xl font-bold text-center">Solana Token Creator</h1>
         <p className="text-xl text-muted-foreground">
-          Easily Create your own Solana SPL Token in just 7+1 steps without
-          Coding.
+          Easily Create compressed tokens on Solana without coding.
         </p>
       </div>
 
@@ -32,7 +31,7 @@ const DashboardPage: FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-base font-medium flex items-center">
-                <span className="text-red-500 mr-1">*</span> Name
+                Name <span className="text-red-500 ml-1 text-xs">*</span>
               </label>
               <Input placeholder="Ex: Solana" className="h-12 text-base" />
               <p className="text-sm text-muted-foreground">
@@ -42,7 +41,7 @@ const DashboardPage: FC = () => {
 
             <div className="space-y-2">
               <label className="text-base font-medium flex items-center">
-                <span className="text-red-500 mr-1">*</span> Symbol
+                Symbol <span className="text-red-500 ml-1 text-xs">*</span>
               </label>
               <Input placeholder="Ex: SOL" className="h-12 text-base" />
               <p className="text-sm text-muted-foreground">
@@ -52,7 +51,7 @@ const DashboardPage: FC = () => {
 
             <div className="space-y-2">
               <label className="text-base font-medium flex items-center">
-                <span className="text-red-500 mr-1">*</span> Decimals
+                Decimals <span className="text-red-500 ml-1 text-xs">*</span>
               </label>
               <Input
                 type="number"
@@ -66,7 +65,7 @@ const DashboardPage: FC = () => {
 
             <div className="space-y-2">
               <label className="text-base font-medium flex items-center">
-                <span className="text-red-500 mr-1">*</span> Supply
+                Supply <span className="text-red-500 ml-1 text-xs">*</span>
               </label>
               <Input
                 type="number"
@@ -74,14 +73,14 @@ const DashboardPage: FC = () => {
                 className="h-12 text-base"
               />
               <p className="text-sm text-muted-foreground">
-                Most token use 1GB
+                Most token use 1 billion tokens
               </p>
             </div>
           </div>
           <div className="space-y-2">
             <div className="flex justify-between">
               <label className="text-base font-medium flex items-center">
-                <span className="text-red-500 mr-1">*</span> Description
+                Description <span className="text-red-500 ml-1 text-xs">*</span>
               </label>
               <span className="text-sm text-muted-foreground">0/500</span>
             </div>
@@ -93,7 +92,7 @@ const DashboardPage: FC = () => {
           <div className="space-y-2">
             <div className="flex justify-between">
               <label className="text-base font-medium flex items-center">
-                <span className="text-red-500 mr-1">*</span> Image
+                Image <span className="text-red-500 ml-1 text-xs">*</span>
               </label>
             </div>
             <div className="border-2 border-dashed rounded-lg p-8 text-center border-accent/40">
