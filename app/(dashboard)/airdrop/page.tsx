@@ -1,8 +1,4 @@
-import { FC } from "react";
-
-interface AirdropProps {}
-
-const Airdrop: FC<AirdropProps> = () => {
+const Airdrop = () => {
   return <div>Airdrop</div>;
 };
 

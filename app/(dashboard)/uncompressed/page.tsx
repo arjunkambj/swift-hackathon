@@ -1,8 +1,4 @@
-import { FC } from "react";
-
-interface UncompressedProps {}
-
-const Uncompressed: FC<UncompressedProps> = () => {
+const Uncompressed = () => {
   return <div>Uncompressed</div>;
 };
 
