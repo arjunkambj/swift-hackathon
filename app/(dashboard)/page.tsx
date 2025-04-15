@@ -298,7 +298,7 @@ const DashboardPage: FC = () => {
           </Button>
           <div className="text-right">
             <span className="text-base font-semibold">
-              Total fees: 0.15 SOL{" "}
+              Total fees: 0.25 SOL{" "}
             </span>
             <span className="text-sm text-muted-foreground">
               + Network fees
